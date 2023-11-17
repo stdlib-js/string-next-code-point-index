@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/string-next-code-point-index/tags). For example,
+
+```javascript
 import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@v0.1.0-esm/index.mjs';
 ```
 
@@ -103,7 +108,7 @@ var out = nextCodePointIndex( 'last man standing', 4 );
 <body>
 <script type="module">
 
-import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@v0.1.0-esm/index.mjs';
+import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@esm/index.mjs';
 
 var out = nextCodePointIndex( 'last man standing', 4 );
 // returns 5
