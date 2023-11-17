@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@esm/index.mjs';
+import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@v0.1.0-esm/index.mjs';
 ```
 
 #### nextCodePointIndex( string\[, fromIndex] )
@@ -103,7 +103,7 @@ var out = nextCodePointIndex( 'last man standing', 4 );
 <body>
 <script type="module">
 
-import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@esm/index.mjs';
+import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@v0.1.0-esm/index.mjs';
 
 var out = nextCodePointIndex( 'last man standing', 4 );
 // returns 5
