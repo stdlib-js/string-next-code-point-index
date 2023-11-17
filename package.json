@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/string-next-code-point-index",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Return the position of the next Unicode code point in a string after a specified position.",
   "license": "Apache-2.0",
   "author": {
