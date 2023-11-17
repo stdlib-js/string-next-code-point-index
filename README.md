@@ -45,102 +45,25 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
-<section class="installation">
 
-## Installation
 
-```bash
-npm install @stdlib/string-next-code-point-index
-```
 
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
--   To use as a general utility for the command line, install the corresponding [CLI package][cli-section] globally.
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
-
-<section class="usage">
-
-## Usage
-
-```javascript
-var nextCodePointIndex = require( '@stdlib/string-next-code-point-index' );
-```
-
-#### nextCodePointIndex( string\[, fromIndex] )
-
-Returns the position of the next Unicode code point in a string after a specified position.
-
-```javascript
-var out = nextCodePointIndex( 'last man standing' );
-// returns 1
-```
-
-By default, the function searches for a Unicode code point starting from the first index. To specify an alternative starting search index, provide a `fromIndex` argument.
-
-```javascript
-var out = nextCodePointIndex( 'last man standing', 4 );
-// returns 5
-```
-
-</section>
-
-<!-- /.usage -->
 
 <!-- Package usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
-<section class="notes">
 
-## Notes
-
--   If `string` is an empty string, the function returns `-1` irrespective of `fromIndex`.
--   If a code point does not exist after `fromIndex`, the function returns `-1`.
--   Note that `fromIndex` does **not** refer to a visual character position, but to an index in the ordered sequence of [UTF-16][utf-16] code units.
-
-</section>
-
-<!-- /.notes -->
 
 <!-- Package usage examples. -->
 
-<section class="examples">
 
-## Examples
-
-<!-- eslint no-undef: "error" -->
-
-```javascript
-var nextCodePointIndex = require( '@stdlib/string-next-code-point-index' );
-
-var out = nextCodePointIndex( 'last man standing', 4 );
-// returns 5
-
-out = nextCodePointIndex( 'presidential election', 8 );
-// returns 9
-
-out = nextCodePointIndex( '𐒻𐓟𐒻𐓟', 0 );
-// returns 2
-
-out = nextCodePointIndex( '🌷', 0 );
-// returns -1
-```
-
-</section>
-
-<!-- /.examples -->
 
 <!-- Section for describing a command-line interface. -->
 
-* * *
+
 
 <section class="cli">
 
-## CLI
+
 
 <section class="installation">
 
@@ -158,7 +81,7 @@ npm install -g @stdlib/string-next-code-point-index-cli
 
 <section class="usage">
 
-### Usage
+## Usage
 
 ```text
 Usage: next-code-point-index [options] [<string>]
@@ -186,7 +109,7 @@ Options:
 
 <section class="examples">
 
-### Examples
+## Examples
 
 ```bash
 $ next-code-point-index --from=0 𐒻𐓟𐒻𐓟
@@ -220,6 +143,11 @@ $ echo -n '𐒻𐓟𐒻𐓟' | next-code-point-index --from=0
 
 <section class="related">
 
+## See Also
+
+-   <span class="package-name">[`@stdlib/string-next-code-point-index`][@stdlib/string-next-code-point-index]</span><span class="delimiter">: </span><span class="description">return the position of the next Unicode code point in a string after a specified position.</span>
+
+
 </section>
 
 <!-- /.related -->
@@ -237,7 +165,7 @@ This package is part of [stdlib][stdlib], a standard library for JavaScript and 
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
-#### Community
+### Community
 
 [![Chat][chat-image]][chat-url]
 
@@ -260,8 +188,8 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 <section class="links">
 
-[npm-image]: http://img.shields.io/npm/v/@stdlib/string-next-code-point-index.svg
-[npm-url]: https://npmjs.org/package/@stdlib/string-next-code-point-index
+[npm-image]: http://img.shields.io/npm/v/@stdlib/string-next-code-point-index-cli.svg
+[npm-url]: https://npmjs.org/package/@stdlib/string-next-code-point-index-cli
 
 [test-image]: https://github.com/stdlib-js/string-next-code-point-index/actions/workflows/test.yml/badge.svg?branch=v0.1.0
 [test-url]: https://github.com/stdlib-js/string-next-code-point-index/actions/workflows/test.yml?query=branch:v0.1.0
