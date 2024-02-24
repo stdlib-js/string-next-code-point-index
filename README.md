@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@deno/mod.js';
+import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@v0.2.1-deno/mod.js';
 ```
 
 #### nextCodePointIndex( string\[, fromIndex] )
@@ -98,7 +98,7 @@ var out = nextCodePointIndex( 'last man standing', 4 );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@deno/mod.js';
+import nextCodePointIndex from 'https://cdn.jsdelivr.net/gh/stdlib-js/string-next-code-point-index@v0.2.1-deno/mod.js';
 
 var out = nextCodePointIndex( 'last man standing', 4 );
 // returns 5
